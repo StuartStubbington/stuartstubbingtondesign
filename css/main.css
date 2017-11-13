@@ -1,0 +1,315 @@
+/* Base Element Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+.main-header,
+.main-nav,
+.row,
+.main-footer{
+        display: flex;
+    }
+
+body {
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: cadetblue;
+}
+
+a:hover {
+    color: cadetblue;
+}
+
+.main-header {
+        font-size: 0.75em;
+        width: 100%;
+        font-family: 'Cabin', sans-serif;
+        flex-direction: column;
+}
+
+.socialone{
+    display: none;
+}
+
+.me {
+    margin-top: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+}
+
+.metwo{
+     margin-top: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+}
+
+h1{
+    
+    color: skyblue;
+}
+
+h2{
+    font-family: 'Cabin', sans-serif;
+    color: cadetblue;
+}
+
+p{
+    font-family: 'Cabin', sans-serif;
+    color: cadetblue;   
+}
+
+.head {
+    margin-left: 20px;
+}
+
+.name{
+    color: cadetblue;
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-family: 'Bree Serif', serif;
+    text-align: center;    
+    align-content: center;
+}
+
+.title{
+    margin-top: 20px;
+    color: skyblue;
+}
+
+.main-nav {
+    align-items: center;
+    justify-content: flex-end;
+    margin: 50px;
+    padding: 0;
+    List-style: none;
+    
+}
+
+li {
+    font-size: 1.75em;
+    text-align: center;
+}
+
+li a {
+    padding: 10px;
+
+}
+
+.colour {
+    width: 100%;
+    background-color: #fff;
+    background-image: -webkit-linear-gradient(95deg, #f4f5f7 35%, #fff 35%);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;   
+}
+
+.col{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-flow: wrap;
+    line-height: 1.5;
+}
+
+.primary{
+    width: 85%;
+    font-size: 1.2em;
+    margin: 50px;
+}
+
+.intro {
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+}
+
+.secondary {
+        background: #f4f5f7;
+        border: solid yellow 3px;
+        border-radius: 25px;
+        padding: 10px;
+        width: 75%;
+        align-content: center;
+}
+
+.mountains {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.tertiary{
+    background: #f4f5f7;
+    width: 100%;
+    padding: 50px;
+    font-size: 1.2em;
+}
+
+.tagline{
+    margin-bottom: 75px;
+}
+
+.fourth {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.educ {
+    color: skyblue;
+}
+
+.arrow {
+    margin: 15px;
+    height: 150px;
+    width: 150px;
+}
+
+.forest{
+    width: 100%;
+    margin-top: -25px;
+    margin-bottom: -110px;
+}
+
+.main-footer {
+    width: 100%;
+    background-color: #f4f5f7;
+    text-align: center;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialtwo{
+    padding: 10px;
+}
+
+
+/* Media Queries */
+
+
+
+@media (min-width: 1000px){
+    
+.name{
+    font-size: 3em;
+}
+
+.title{
+   font-size: 2em;
+}
+    
+.me {
+    margin-top: 50px;
+    top: 10px;
+    right: 20px;
+    height: 250px;
+    width: 250px;
+}
+    
+.metwo{
+   margin-top: 50px;
+    top: 10px;
+    right: 20px;
+    height: 250px;
+    width: 250px; 
+}
+    
+li {
+    font-size: 2.2em;
+    padding: 10px;
+}
+    
+.col{
+    line-height: 2em;
+        
+    }
+    
+.intro{
+    margin-top: 60px;
+    width: 70%;
+    font-size: 1.65em;
+}
+    
+.secondary {
+    width: 65%;
+    margin-top: 65px;
+    font-size: 1.7em;
+}
+    
+.mountains{
+    margin-top: 100px;   
+}
+
+.forest {
+    width: 100%;
+    max-height: 100%;
+}
+
+.tertiary{
+    padding: 50px;
+    line-height: 1.5;
+    font-size: 1.65em;
+}
+
+.tertiary p{
+    margin: 0 auto;
+    width: 70%;
+    
+}
+    
+.fourth{
+    flex-direction: row;
+    justify-content: center;
+    width: 95%;
+}
+    
+.education{
+    margin: 50px;
+}
+    
+}
+
+@media (min-width: 1320px){
+    
+    
+.secondary{
+      width: 50%;  
+}
+
+.tertiary{
+        padding: 75px;
+}
+  
+    
+    
+}
+
+/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
